@@ -1,4 +1,6 @@
-
+// Este es el progrma para la clase "Deportivo.h" en donde se especifica y se expresan los atributos de los objetos pertenecientes a esta clase.
+// Creado por: Oscar Alexander Vilchis Soto (A01713207)
+// Creado el 10/11/2024
 #ifndef DEPORTIVO_H
 #define DEPORTIVO_H
 #include <iostream>
