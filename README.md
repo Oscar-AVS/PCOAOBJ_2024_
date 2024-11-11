@@ -1,2 +1,2 @@
-# PCOAOBJ_2024_
-Repositorio  para los distintos ejercicios.
+# FINDmy... Car
+Este es un proyecto de pensamiento computacional orientado a objetos. 
