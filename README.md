@@ -1,4 +1,5 @@
 # FINDmy... Car
+- Oscar Alexander VIlchis Soto- A01713207
 Este es un proyecto de pensamiento computacional orientado a objetos, cuyo objetivo es crear una aplicación destinada a la creación y organización de un sistema de inventario de vehículos en un concesionario de autos. El proyecto en desarrollo se enfoca en la implementación de un sistema completo de inventario para un concesionario donde se comercializan distintos tipos de vehículos, tales como deportivos, sedanes y SUVs. 
 
 Este programa tiene como finalidad proporcionar a los usuarios una herramienta eficaz para visualizar, explorar y seleccionar el auto que mejor se adapte a lo que necesitan, basándose en una serie de criterios almacenados dentro del sistema de inventario. Algunos de los principales criterios de búsqueda incluyen: marca, modelo, año de fabricación, precio, tipo de motor, potencia, entre otros. 
