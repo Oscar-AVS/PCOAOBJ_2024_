@@ -1,7 +1,6 @@
-//
-// Created by alex_ on 10/11/2024.
-//
-
+// Este es el progrma creado para la clase "Sedan.h" en donde se asignan valores y se especifica que atributo tiene el objeto perteneciente a esta clase 
+// Creado por: Oscar Alexander Vilchis Soto (A01713207)
+// Creado el 10/11/2024
 #ifndef SEDAN_H
 #define SEDAN_H
 #include <iostream>
