@@ -1,56 +1,36 @@
 // Este es el progrma para la clase SUV en donde se especifica que atributos tiene dicha clase 
 // Creado por: Oscar Alexander Vilchis Soto (A01713207)
-// Creado el 10/11/2024
+// Creado el 10/11/2024 - Se modificó el 20/11/2024 
+//// En esta modificación se cambió el funcionamiento del código ya que ahora hereda distintos atributos de la clase padre Autos.h y mantiene solo ciertos métodos adicionales 
 
 
 #ifndef SUV_H
 #define SUV_H
-#include <iostream>
-#include <string>
-using namespace std;
 
-class SUV {
+#include "Auto.h"
+
+class SUV : public Auto {
 private:
-    int cantidad_pasajeros;
-    double espacio_cajuela;
-    string marca;
-    string modelo;
-    int anio;
-    double precio;
+    int cantidadPasajeros;
+    float espacioCajuela;
     string traccion;
 
 public:
     // Constructor
-    SUV(int pasajeros, double espacio, string m, string mod, int a, double p, string tracc)
-        : cantidad_pasajeros(pasajeros), espacio_cajuela(espacio), marca(m), modelo(mod), anio(a), precio(p), traccion(tracc) {}
+    SUV(const string& marca, const string& modelo, int anio, float precio, int cantidadPasajeros, float espacioCajuela, const string& traccion)
+        : Auto(marca, modelo, anio, precio), cantidadPasajeros(cantidadPasajeros), espacioCajuela(espacioCajuela), traccion(traccion) {}
 
-    // Getters
-    int getCantidadPasajeros() const { return cantidad_pasajeros; }
-    double getEspacioCajuela() const { return espacio_cajuela; }
-    string getMarca() const { return marca; }
-    string getModelo() const { return modelo; }
-    int getAnio() const { return anio; }
-    double getPrecio() const { return precio; }
-    string getTraccion() const { return traccion; }
-
-    // Setters
-    void setCantidadPasajeros(int pasajeros) { cantidad_pasajeros = pasajeros; }
-    void setEspacioCajuela(double espacio) { espacio_cajuela = espacio; }
-    void setMarca(const string &m) { marca = m; }
-    void setModelo(const string &mod) { modelo = mod; }
-    void setAnio(int a) { anio = a; }
-    void setPrecio(double p) { precio = p; }
-    void setTraccion(const string &tracc) { traccion = tracc; }
-
-    void mostrarInfo() const {
-        cout << "SUV: " << marca << " " << modelo << ", Año: " << anio << ", Pasajeros: "
-             << cantidad_pasajeros << ", Espacio de Cajuela: " << espacio_cajuela
-             << " litros, Precio: $" << precio << ", Tracción: " << traccion << "\n";
+    // Métodos
+    void mostrarInfo() override {
+        Auto::mostrarInfo();
+        cout << "Capacidad de Pasajeros: " << cantidadPasajeros
+             << "\nEspacio de Cajuela: " << espacioCajuela << " m3"
+             << "\nTracción: " << traccion << endl;
     }
 
-    void activarTraccion() const {
-        cout << "La tracción del " << marca << " " << modelo << " es: " << traccion << ".\n";
+    void activarTraccion() {
+        cout << "La tracción " << traccion << " está activada." << endl;
     }
 };
 
-#endif //SUV_H
+#endif // SUV_H
