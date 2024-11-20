@@ -1,23 +1,23 @@
 // Este es el progrma principal (main) en donde se implementan todos los códigos creados para cada clase (archivos.h) en este código se le muestra al usuario cada atributo del objeto. 
 // Creado por: Oscar Alexander Vilchis Soto (A01713207)
-// Creado el 10/11/2024
+// Creado el 10/11/2024 - modificado el 19/11/2024
+// Se modificó el código para poder adecuarlo a las nuevas clases de Findmy.h y Auto.h de manera que se pueda implementar en el código la herencia y composición entre clases, este código solo es para llamar a las clases y poder mostrar el resumen al usuario
 int main() {
-    Deportivo deportivo("Ferrari", "488 GTB", 330, 2023, 250000, "V8", 710);
-    Sedan sedan(15.0, "Toyota", "Camry", 2022, 30000, "Automática");
-    SUV suv(7, 750, "Jeep", "Grand Cherokee", 2023, 40000, "4x4");
+    FindMy app;
 
-    deportivo.mostrarInfo();
-    deportivo.acelerar();
+    // Agregar vehículos
+    app.agregarDeportivo();
+    app.agregarSUV();
+    app.agregarSedan();
 
-    cout << endl;
+    // Mostrar vehículos disponibles
+    app.mostrarVehiculos();
 
-    sedan.mostrarInfo();
-    sedan.calcularRendimiento(100);
+    // Pedir datos del usuario
+    app.obtenerDatosUsuario();
 
-    cout << endl;
-
-    suv.mostrarInfo();
-    suv.activarTraccion();
+    // Mostrar resumen
+    app.mostrarResumen();
 
     return 0;
 }
