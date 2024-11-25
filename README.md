@@ -11,5 +11,11 @@ Además de permitir la visualización de los autos disponibles dentro de las dif
 De esta manera, los usuarios tendrán la posibilidad de buscar autos que se ajusten a sus necesidades y preferencias, visualizando de manera clara y detallada la información relevante de cada vehículo. Esto les permitirá tomar decisiones informadas al momento de elegir el auto que mejor se acomode a sus expectativas y requisitos, facilitando el proceso de selección y compra.
 
 
+Debido a que quise complicarme la vida, tuve que recurrir a materiales externos para poder incluir ciertas cáracteristicas a mi tercer avance, adjunto bibliografía: 
+carlos aguilera. (2020, November 14). Programa C++ Tienda de Productos. [Video]. YouTube. https://www.youtube.com/watch?v=Znada46nagE 
+W3Schools.com. (n.d.). https://www.w3schools.com/cpp/cpp_data_structures.asp
+Alfonso Javier Gil Llamas. (2023, June 16). Concesionario de coches con c++ y poo [Video]. YouTube. https://www.youtube.com/watch?v=EKBj7sxA6aQ
+
+
 
 
