@@ -17,5 +17,5 @@ W3Schools.com. (n.d.). https://www.w3schools.com/cpp/cpp_data_structures.asp
 Alfonso Javier Gil Llamas. (2023, June 16). Concesionario de coches con c++ y poo [Video]. YouTube. https://www.youtube.com/watch?v=EKBj7sxA6aQ
 
 
-
+---- Para este proyecto, el apartado de Inventario se utilizó usando distintos autos al azar y no todos los datos son verificados--- De igual manera por términos de estética en el código distintos textos cona centos o signos se usaron sin dichos caracteres ya que al komento de compilar, aparecían símbolos raros :D
 
