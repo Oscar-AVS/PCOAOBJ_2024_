@@ -1,34 +1,35 @@
 // Este es el progrma creado para la clase "Sedan.h" en donde se asignan valores y se especifica que atributo tiene el objeto perteneciente a esta clase 
 // Creado por: Oscar Alexander Vilchis Soto (A01713207)
-// Creado el 10/11/2024 - Se modificó el 19/11/2024 
+// Creado el 10/11/2024 - Se modificó el 19/11/2024 - Se modificó el 24/11/2024
 // En esta modificación se cambió el funcionamiento del código ya que ahora hereda distintos atributos de la clase padre Autos.h y mantiene solo ciertos métodos adicionales 
+// En la segunda modiciación se añaden setters que carecían en el primer avance 
 #ifndef SEDAN_H
 #define SEDAN_H
-#include <iostream>
-#include <string>
-using namespace std;
+
 #include "Auto.h"
 
 class Sedan : public Auto {
 private:
+    int numPuertas;
     string tipoTransmision;
-    float eficienciaCombustible;
+    float consumoGasolina;
 
 public:
-    // Constructor
-    Sedan(const string& marca, const string& modelo, int anio, float precio, const string& tipoTransmision, float eficienciaCombustible)
-        : Auto(marca, modelo, anio, precio), tipoTransmision(tipoTransmision), eficienciaCombustible(eficienciaCombustible) {}
+    Sedan(string marca, string modelo, int anio, int puertas, string transmision, float consumo, float precio)
+        : Auto(marca, modelo, anio, precio), numPuertas(puertas), tipoTransmision(transmision), consumoGasolina(consumo) {}
 
-    // Métodos
-    void mostrarInfo() override {
+    void mostrarInfo() const override {
         Auto::mostrarInfo();
-        cout << "Transmisión: " << tipoTransmision
-             << "\nEficiencia: " << eficienciaCombustible << " km/l" << endl;
+        cout << "Puertas: " << numPuertas << ", Transmisión: " << tipoTransmision << ", Consumo Gasolina: " << consumoGasolina << " km/l\n";
     }
 
-    void calcularRendimiento(float kilometros) {
-        cout << "Rendimiento esperado: " << kilometros / eficienciaCombustible << " litros de combustible." << endl;
-    }
+    int getNumPuertas() const { return numPuertas; }
+    string getTipoTransmision() const { return tipoTransmision; }
+    float getConsumoGasolina() const { return consumoGasolina; }
+
+    void setNumPuertas(int puertas) { numPuertas = puertas; }
+    void setTipoTransmision(const string &transmision) { tipoTransmision = transmision; }
+    void setConsumoGasolina(float consumo) { consumoGasolina = consumo; }
 };
-#endif // SEDAN_H
 
+#endif
