@@ -1,3 +1,6 @@
+// Creado por Oscar Alexander VIlchis Soto (a0171320/)
+// Este código es la clase padre de las distintas categorías de autos, tiene herencia con ellos y por tanto aquí se acumulan distintos atributos como marca, modelo, año y el precio
+// Se modificó el 24/11/2024 - 
 #ifndef AUTO_H
 #define AUTO_H
 
