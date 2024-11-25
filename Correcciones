@@ -1,0 +1,8 @@
+Correcciones. 
+
+
+En el primer avance, se me hizo la observación de que mis clases no contaban con  setters. 
+En este tercer avance, se agregan dos nuevas clases: Inventario y  Seminuevo 
+Además se agregaron los setters necesarios para las clases que lo requerían y se modificó la manera en la que el usuario Interactúa con el programa, ahora el usuario puede ingresar en que tipo de carro está interesado. 
+
+EN el diagrama de clases se corrigió el uso de las flechas para representar herencia y composición 
