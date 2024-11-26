@@ -1,7 +1,7 @@
 Correcciones. 
 
 
-En el primer avance, se me hizo la observación de que mis clases no contaban con  setters. 
+En el primer avance, se me hizo la observación de que mis clases no contaban con  setters. Así como también mi diagrama tenía mal las flechas que señalaban las relaciones
 En este tercer avance, se agregan dos nuevas clases: Inventario y  Seminuevo 
 Además se agregaron los setters necesarios para las clases que lo requerían y se modificó la manera en la que el usuario Interactúa con el programa, ahora el usuario puede ingresar en que tipo de carro está interesado. 
 
